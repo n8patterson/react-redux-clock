@@ -12,6 +12,8 @@ This project leverages python 3.7.9 with the following packages:
 
 * [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
 
+* [Surge](https://surge.sh/) - Simple, single-command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line
+
 ---
 
 ## Installation Guide
@@ -27,6 +29,8 @@ Type the following in your termainal where you cloned the repo.
 ---
 
 ## Examples
+
+You can see a live example [here](https://react-redux-clock.surge.sh/)
 
 Type the following in your termainal where you cloned the repo.
 
