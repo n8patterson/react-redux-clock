@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateTime, selectTime } from './clockSlice.js';
 import { AnalogDisplay } from '../analogDisplay/AnalogDisplay';
 
+
 export function Clock() {
-  const [time, setTime] = useState(new Date().toLocaleString());
+  const time = useSelector(selectTime);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTime(new Date().toLocaleString());
+      dispatch(updateTime());
     }, 1000);
 
     return () => {
       clearInterval(intervalId);
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
