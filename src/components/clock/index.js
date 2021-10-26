@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateTime, selectTime } from './clockSlice.js';
-import { AnalogDisplay } from '../../components/AnalogDisplay';
+import { AnalogDisplay } from '../AnalogDisplay';
 
 
 export function Clock() {
